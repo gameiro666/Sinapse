@@ -63,7 +63,7 @@ body {
             font-weight: 300;
         }
 
-        >.alinha {
+        .alinha {
             text-align: center;
             padding: 4% 0;
 
@@ -83,10 +83,82 @@ body {
             }
         }
 
+        >form {
+            background-color: #564D9E;
+            padding: 4%;
+            padding-bottom: 0;
+            border-radius: 30px;
+            width: 60%;
+            z-index: 2;
+            position: relative;
+
+            >p {
+                margin-bottom: 20px;
+
+                >label {
+                    color: #fff;
+
+                    >input, textarea {
+                        width: 60%;
+                        border-radius: 10px;
+                        height: 40px;
+                        border: none;
+                        padding-left: 2%;
+
+                        &::placeholder {
+                            font-size: 1rem;
+                            padding-left: 2%;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            padding-left: 2%;
+                        }
+                    
+                    }
+
+                    >textarea {
+                        width: 100%;
+                        height: 120px;
+                        resize: none;
+
+                        &::placeholder {
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+
+            
+            input[type="submit"] {
+                background-color: #fff;
+                color: #564D9E;
+                height: 50px;
+                width: 40%;
+                border-radius: 30px;
+                font-weight: 700;
+                border: none;
+                cursor: pointer;
+                font-size: 1.4rem;
+                margin: 0 auto;
+                
+                &:hover {
+                    animation:botao .9s both;
+                @keyframes botao{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}}
+                }
+
+
+            }
+        }
 
 
 
 
 
+
+    }
+
+    >.main-contato {
+        height:0;
     }
 }

@@ -51,12 +51,12 @@ body > main > p {
   font-weight: 300;
 }
 
-body > main > .alinha {
+body > main .alinha {
   text-align: center;
   padding: 4% 0;
 }
 
-body > main > .alinha > img {
+body > main .alinha > img {
   max-width: 100%;
 }
 
@@ -73,5 +73,162 @@ body > main > a {
 
 body > main > a > .cta {
   width: 50%;
+}
+
+body > main > form {
+  background-color: #564D9E;
+  padding: 4%;
+  padding-bottom: 0;
+  border-radius: 30px;
+  width: 60%;
+  z-index: 2;
+  position: relative;
+}
+
+body > main > form > p {
+  margin-bottom: 20px;
+}
+
+body > main > form > p > label {
+  color: #fff;
+}
+
+body > main > form > p > label > input, body > main > form > p > label textarea {
+  width: 60%;
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+  padding-left: 2%;
+}
+
+body > main > form > p > label > input::-webkit-input-placeholder, body > main > form > p > label textarea::-webkit-input-placeholder {
+  font-size: 1rem;
+  padding-left: 2%;
+}
+
+body > main > form > p > label > input:-ms-input-placeholder, body > main > form > p > label textarea:-ms-input-placeholder {
+  font-size: 1rem;
+  padding-left: 2%;
+}
+
+body > main > form > p > label > input::-ms-input-placeholder, body > main > form > p > label textarea::-ms-input-placeholder {
+  font-size: 1rem;
+  padding-left: 2%;
+}
+
+body > main > form > p > label > input::placeholder, body > main > form > p > label textarea::placeholder {
+  font-size: 1rem;
+  padding-left: 2%;
+}
+
+body > main > form > p > label > input:focus, body > main > form > p > label textarea:focus {
+  outline: none;
+  padding-left: 2%;
+}
+
+body > main > form > p > label > textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+
+body > main > form > p > label > textarea::-webkit-input-placeholder {
+  padding-top: 10px;
+}
+
+body > main > form > p > label > textarea:-ms-input-placeholder {
+  padding-top: 10px;
+}
+
+body > main > form > p > label > textarea::-ms-input-placeholder {
+  padding-top: 10px;
+}
+
+body > main > form > p > label > textarea::placeholder {
+  padding-top: 10px;
+}
+
+body > main > form input[type="submit"] {
+  background-color: #fff;
+  color: #564D9E;
+  height: 50px;
+  width: 40%;
+  border-radius: 30px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+
+body > main > form input[type="submit"]:hover {
+  -webkit-animation: botao .9s both;
+          animation: botao .9s both;
+}
+
+@-webkit-keyframes botao {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes botao {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+body > .main-contato {
+  height: 0;
 }
 /*# sourceMappingURL=internas.css.map */
