@@ -10,14 +10,12 @@
     <!--JQuerry--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Font Awesome--><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
 
-    <title>Sobre | Sinapse: Agência Digital</title>
+    <title>Serviços | Sinapse: Agência Digital</title>
 </head>
-
 <body>
     <div class="container-bg">
-        <img src="./img/is-sobre.png" class="img-sobre" alt="">
+        <img src="./img/is-home.png" alt="">
     </div>
-
     <header>
         <nav>
             <a href="index.html"><img src="./img/logo.png" alt="Logo Sinapse"></a>
@@ -30,11 +28,34 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-       <p>Segundo a fisiologia, sinapse é local de contato entre neurônios, onde ocorre a transmissão de impulsos nervosos de uma célula para outra. Fundada em 2019 em Santos, São Paulo, a Agência Sinapse nasce da ligação entre as ideias presentes no cérebro de dois amigos apaixonados por tecnologia, que acreditavam que as empresas de sua região poderiam e deveriam estar mais presentes na web, exercendo o peso e recebendo a devida importância que sempre tiveram fora dela.</p>
-       <br><br><br>
-       <p>Entre em <a href="#">contato</a> conosco e vamos discutir seu projeto. Sua organização também pode usufruir dos benefícios da internet.</p>
+    <main> 
+        <h1>Pronto pra ligar os pontos?</h1>
+        <form id="formulario" method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php">
+            <p>
+                <label>
+                    Nome<br> <input type="text" required placeholder="Digite seu nome" name="nome" id="nome" size="35"
+                        maxlength="30" autofocus>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Telefone<br><input type="tel" required placeholder="Digite seu telefone" name="tel" id="telefone">
+                </label>
+            </p>
+            <p>
+                <label>
+                    E-mail<br><input type="email" required placeholder="Digite seu e-mail" name="email" id="email"
+                        size="35">
+                </label>
+            </p>
+            <p>
+                <label>
+                Mensagem<br> <textarea name="mensagem" required placeholder="Digite aqui sua mensagem" id="mensagem" rows="5" cols="50"></textarea>
+                </label>
+            </p>
+            <input id="btncadastrar" type="submit" value="Enviar">
+        </form>
+        <p>Solicite uma cotação!</p>
     </main>
     <footer>
         <p class="slogan">#ligueospontos</p>
