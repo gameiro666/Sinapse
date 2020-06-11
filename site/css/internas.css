@@ -26,6 +26,6 @@ body > main {
 }
 
 body > main > p {
-  width: 100%;
+  padding: 0;
 }
 /*# sourceMappingURL=internas.css.map */
