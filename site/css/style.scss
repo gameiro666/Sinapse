@@ -40,6 +40,7 @@ body {
         >nav {
             display: flex;
             padding-top: 3%;
+            position: sticky;
 
             >ul {
                 width: 100%;
@@ -51,6 +52,11 @@ body {
                     text-align: center;
                     padding-right: 3%;
 
+                    &:hover {
+                        animation: menu-hover 0.9s both;
+                        @keyframes menu-hover{0%{transform:translateY(-25px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-15px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+                    }
+
                     &:nth-child(n + 3) {
 
                         >a {
@@ -61,10 +67,9 @@ body {
                     &:last-child {
                         padding-right: 0;
                     }
-                    
-                    &:hover {
-                        animation: menu-hover 0.9s both;
-                        @keyframes menu-hover{0%{transform:translateY(-25px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-15px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+
+                    >a {
+                        width: 100%;
                     }
                 }
             }
@@ -110,7 +115,7 @@ body {
             >.cta {
                 width: 70%;
                 border-radius: 36px;
-                background-color: $cor;
+                background-color: #564D9E;
                 color: #fff;
                 border: none;
                 font-size: 22px;

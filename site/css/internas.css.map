@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAGI,IAHA,GAGC,aAAa,CAAC;EACX,gBAAgB,EAAE,qCAAqC;CAC1D",
+    "sources": [
+        "internas.scss"
+    ],
+    "names": [],
+    "file": "internas.css"
+}

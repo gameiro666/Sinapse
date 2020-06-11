@@ -41,6 +41,8 @@ body > header > nav {
   display: -ms-flexbox;
   display: flex;
   padding-top: 3%;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 body > header > nav > ul {
@@ -57,14 +59,6 @@ body > header > nav > ul > li {
   width: 12%;
   text-align: center;
   padding-right: 3%;
-}
-
-body > header > nav > ul > li:nth-child(n + 3) > a {
-  color: #fff;
-}
-
-body > header > nav > ul > li:last-child {
-  padding-right: 0;
 }
 
 body > header > nav > ul > li:hover {
@@ -170,6 +164,18 @@ body > header > nav > ul > li:hover {
             animation-timing-function: ease-out;
     opacity: 1;
   }
+}
+
+body > header > nav > ul > li:nth-child(n + 3) > a {
+  color: #fff;
+}
+
+body > header > nav > ul > li:last-child {
+  padding-right: 0;
+}
+
+body > header > nav > ul > li > a {
+  width: 100%;
 }
 
 body > header > nav > a {
