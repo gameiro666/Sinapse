@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--Favicon--><link rel="icon" type="image/png" href="img/favicon.png" sizes="32x32">
+    <!--Normalize--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--CSS--><link rel="stylesheet" href="css/style.css">
+        <!--CSS--><link rel="stylesheet" href="css/internas.css">
+    <!--JQuerry--><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Font Awesome--><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+
+    <title>Serviços | Sinapse: Agência Digital</title>
+</head>
+<body>
+    <div class="container-bg">
+        <img src="./img/is-home.png" alt="">
+    </div>
+    <header>
+        <nav>
+            <a href="index.html"><img src="./img/logo.png" alt="Logo Sinapse"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <form id="formulario" method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php">
+            <p>
+                <label>
+                    Nome<br> <input type="text" required placeholder="Digite seu nome" name="nome" id="nome" size="35"
+                        maxlength="30" autofocus>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Telefone<br><input type="tel" required placeholder="Digite seu telefone" name="tel" id="telefone">
+                </label>
+            </p>
+            <p>
+                <label>
+                    E-mail<br><input type="email" required placeholder="Digite seu e-mail" name="email" id="email"
+                        size="35">
+                </label>
+            </p>
+            <p>
+                <label>
+                Mensagem<br> <textarea name="mensagem" required placeholder="Digite aqui sua mensagem" id="mensagem" rows="5" cols="50"></textarea>
+                </label>
+            </p>
+            <input id="btncadastrar" type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <p class="slogan">#ligueospontos</p>
+        <p class="redes-sociais">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
