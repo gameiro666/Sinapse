@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #564D9E;
+    $width-central: 62.5;
+    $cor: #564D9E;
+    font-size: 20px;
+
+    >.container-bg {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../img/lateral-home.svg");
+        background-size: 111%;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -1;
+
+        @media (max-width: 1200px) {
+            background-size: 142%;
+            background-position: center;
+        }
+
+        >img {
+            width: 40%;
+            position: absolute;
+            right: 15%;
+            bottom: 10%;
+        }
+    }
+
+    >header {
+
+        >nav {
+            display: flex;
+            padding-top: 3%;
+
+            >ul {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+
+                >li {
+                    width: 12%;
+                    text-align: center;
+                    padding-right: 3%;
+
+                    &:nth-child(n + 3) {
+
+                        >a {
+                            color: #fff;
+                        }
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                    
+                    &:hover {
+                        animation: menu-hover 0.9s both;
+                        @keyframes menu-hover{0%{transform:translateY(-25px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-15px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+                    }
+                }
+            }
+
+            >a {
+                width: 11%;
+
+                &:hover {
+                    animation: pulsacao 1.5s both;
+                    @keyframes pulsacao{from{transform:scale(1);transform-origin:center center;animation-timing-function:ease-out}10%{transform:scale(.91);animation-timing-function:ease-in}17%{transform:scale(.98);animation-timing-function:ease-out}33%{transform:scale(.87);animation-timing-function:ease-in}45%{transform:scale(1);animation-timing-function:ease-out}}
+                }
+
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    >main {
+        width: 28%;
+        padding-left: 2%;
+        padding-top: 4%;
+        
+        >h1 {
+            font-size: 44px;
+        }
+
+        >p {
+            font-size: 22px;
+            padding-top: 4%;
+            padding-bottom: 14%;
+
+            @media (max-width: 1200px) {
+                width: 80%;
+                font-size: 18px;
+            }
+        }
+
+        >a {
+            width: 100%;
+
+            >.cta {
+                width: 70%;
+                border-radius: 36px;
+                background-color: $cor;
+                color: #fff;
+                border: none;
+                font-size: 22px;
+                font-weight: 600;
+                padding: 4%;
+                text-align: center;
+                cursor: pointer;
+                animation: atencao .4s linear 3s 10 both;
+                @keyframes atencao{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
+                
+                @media (max-width: 1200px) {
+                    font-size: 16px;
+                    width: 50%;
+                }
+
+            }
+        }
+    }
+
+    >footer {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+
+
+        >p, a {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        >.slogan {
+            font-weight: 300;
+            padding-bottom: 4%;
+        }
+
+        >.redes-sociais {
+            >a{
+                padding-right: 4%;
+                font-size: 30px;
+            }
+        }
+
+    }
+}
