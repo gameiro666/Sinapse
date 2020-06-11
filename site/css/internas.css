@@ -26,8 +26,13 @@ body > header::before {
 }
 
 body > header > nav {
-  position: fixed;
   z-index: 2;
+  position: fixed;
+}
+
+body > header > nav > a {
+  z-index: 2;
+  position: relative;
 }
 
 body > header > nav > a > img {
@@ -36,7 +41,7 @@ body > header > nav > a > img {
 }
 
 body > header > .alt-logo > a > img {
-  width: 70%;
+  width: 50%;
 }
 
 body > main {
@@ -69,10 +74,21 @@ body > main > a {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 4%;
+  z-index: 2;
+  position: relative;
 }
 
-body > main > a > .cta {
+body > main > a > .botao {
   width: 50%;
+  border-radius: 36px;
+  background-color: #564D9E;
+  color: #fff;
+  border: none;
+  font-size: 1.375rem;
+  font-weight: 600;
+  padding: 4%;
+  text-align: center;
+  cursor: pointer;
 }
 
 body > main > form {
@@ -93,7 +109,8 @@ body > main > form > p > label {
   color: #fff;
 }
 
-body > main > form > p > label > input, body > main > form > p > label textarea {
+body > main > form > p > label > input,
+body > main > form > p > label textarea {
   width: 60%;
   border-radius: 10px;
   height: 40px;
@@ -101,27 +118,32 @@ body > main > form > p > label > input, body > main > form > p > label textarea 
   padding-left: 2%;
 }
 
-body > main > form > p > label > input::-webkit-input-placeholder, body > main > form > p > label textarea::-webkit-input-placeholder {
+body > main > form > p > label > input::-webkit-input-placeholder,
+body > main > form > p > label textarea::-webkit-input-placeholder {
   font-size: 1rem;
   padding-left: 2%;
 }
 
-body > main > form > p > label > input:-ms-input-placeholder, body > main > form > p > label textarea:-ms-input-placeholder {
+body > main > form > p > label > input:-ms-input-placeholder,
+body > main > form > p > label textarea:-ms-input-placeholder {
   font-size: 1rem;
   padding-left: 2%;
 }
 
-body > main > form > p > label > input::-ms-input-placeholder, body > main > form > p > label textarea::-ms-input-placeholder {
+body > main > form > p > label > input::-ms-input-placeholder,
+body > main > form > p > label textarea::-ms-input-placeholder {
   font-size: 1rem;
   padding-left: 2%;
 }
 
-body > main > form > p > label > input::placeholder, body > main > form > p > label textarea::placeholder {
+body > main > form > p > label > input::placeholder,
+body > main > form > p > label textarea::placeholder {
   font-size: 1rem;
   padding-left: 2%;
 }
 
-body > main > form > p > label > input:focus, body > main > form > p > label textarea:focus {
+body > main > form > p > label > input:focus,
+body > main > form > p > label textarea:focus {
   outline: none;
   padding-left: 2%;
 }

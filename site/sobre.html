@@ -17,13 +17,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Font Awesome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <!--AOS-->
+    <link rel="stylesheet" href="js/aos-master/dist/aos.css"/>
 
     <title>Sobre | Sinapse: Agência Digital</title>
 </head>
 
 <body>
-    <div class="container-bg">
-        <img src="./img/is-sobre.png" class="img-sobre" alt="">
+    <div class="container-bg" data-aos="fade-left" data-aos-duration="1000">
+        <img src="./img/is-sobre.png" class="img-sobre" alt="" data-aos="zoom-in" data-aos-duration="1000">
     </div>
 
     <header>
@@ -40,18 +42,18 @@
     </header>
 
     <main>
-        <h1>Origem</h1>
-        <p>Segundo a fisiologia, sinapse é local de contato entre neurônios, onde ocorre a transmissão de impulsos
+        <h1 data-aos="zoom-in" data-aos-duration="5000">Origem</h1>
+        <p data-aos="zoom-in" data-aos-duration="5000">Segundo a fisiologia, sinapse é local de contato entre neurônios, onde ocorre a transmissão de impulsos
             nervosos de uma célula para outra. Fundada em 2019 em Santos, São Paulo, a Agência Sinapse nasce da ligação
             entre as ideias presentes no cérebro de dois amigos apaixonados por tecnologia, que acreditavam que as
             empresas de sua região poderiam e deveriam estar mais presentes na web, exercendo o peso e recebendo a
             devida importância que sempre tiveram fora dela.</p>
-        <p class="alinha"><img src="./img/is-origem.png" alt=""></p>
-        <h1>Missão</h1>
-        <p>Oferecer um serviço eficaz, moderno e preciso, que posicione nossos clientes em um lugar de destaque no
+        <p data-aos="zoom-in" data-aos-duration="5000"class="alinha"><img src="./img/is-origem.png" alt=""></p>
+        <h1 data-aos="zoom-in" data-aos-duration="5000">Missão</h1>
+        <p data-aos="zoom-in" data-aos-duration="5000">Oferecer um serviço eficaz, moderno e preciso, que posicione nossos clientes em um lugar de destaque no
             ambiente digital.Ética e profissionalismo estão no DNA da Sinapse. Por isso, realizamos os objetivos de nossos parceiros com eficiência e seriedade.</p>
-        <p class="alinha"><img src="./img/is-missao.png" alt=""></p>
-        <p>Entre em <a href="#">contato</a> conosco e vamos discutir seu projeto. Sua organização também pode usufruir
+        <p data-aos="zoom-in" data-aos-duration="5000" class="alinha"><img src="./img/is-missao.png" alt=""></p>
+        <p data-aos="zoom-in" data-aos-duration="5000">Entre em <a href="#">contato</a> conosco e vamos discutir seu projeto. Sua organização também pode usufruir
             dos benefícios da internet.</p>
     </main>
     <footer>
@@ -64,6 +66,15 @@
         </p>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="js/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+         //   disable: function () {
+        //        var maxWidth = 800;
+       //         return window.innerWidth < maxWidth;
+       //     }
+        });
+    </script>
 </body>
 
 </html>

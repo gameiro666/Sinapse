@@ -16,15 +16,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Font Awesome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <!--AOS-->
+    <link rel="stylesheet" href="js/aos-master/dist/aos.css"/>
 
     <title>Serviços | Sinapse: Agência Digital</title>
 </head>
 <body>
-    <div class="container-bg">
-        <img src="./img/is-servicos.png" class="img-servicos" alt="">
+    <div class="container-bg" data-aos="fade-left" data-aos-duration="1000">
+        <img src="./img/is-servicos.png" class="img-servicos" alt="" data-aos="zoom-in" data-aos-duration="1000">
     </div>
     <header>
-        <nav class="alt-logo">
+        <nav>
             <a href="index.html"><img src="./img/logo.png" alt="Logo Sinapse"></a>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -36,20 +38,17 @@
         </nav>
     </header>
     <main>
-        <h1>Construção de ambiente digital</h1>
-        <p>Utilizando o que há de mais moderno no mercado de web design, buscamos criar soluções que conectem nossos parceiros a uma nova realidade.</p>
-        <p>Nossos produtos são desenhados para unir a identidade visual com uma navegação fácil e intuitiva, auxiliando na tomada de decisão.</p>
-        <p>Construímos sites otimizados e responsivos, adequando a qualidade do seu produto/serviço com as principais tendências e estratégias para que você consiga atingir seus objetivos.</p>
-        <p class="alinha"><img src="./img/is-contrucao-de-ambiente-digital.png" alt=""></p>
-        <h1>Posicionamento de marca</h1>
-        <p>Ser encontrado é tão importante quanto encontrar o que está buscando. Escolher entre os muitos caminhos é uma tarefa difícil,  e por isso te ajudamos a entender e elaborar a imagem na web que seu público-alvo terá de você e com isso alcançar os resultados esperados.</p>
-        <p class="alinha"><img src="./img/is-posicionamento-de-marca.png" alt=""></p>
-        <h1>Inteligência estratégica</h1>
-        <p>Observar as tendências e traçar uma estratégia é fundamental para um case de sucesso. A Sinapse te ajuda a analisar os cenários, estabelecer métricas e transformar esse conjunto de informações em um plano de ação efetivo e eficaz, atingindo os objetivos determinados.</p>
-        
-        <p class="alinha"><img src="./img/is-inteligencia-estrategica.png" alt=""></p>
-        <a href="#">
-            <div class="cta">Solicite um orçamento</div>
+        <h1 data-aos="zoom-in" data-aos-duration="5000">Construção de ambiente digital</h1>
+        <p data-aos="zoom-in" data-aos-duration="5000">Utilizando o que há de mais moderno no mercado de web design, buscamos criar soluções que conectem nossos parceiros a uma nova realidade.Nossos produtos são desenhados para unir a identidade visual com uma navegação fácil e intuitiva, auxiliando na tomada de decisão. Construímos sites otimizados e responsivos, adequando a qualidade do seu produto/serviço com as principais tendências e estratégias para que você consiga atingir seus objetivos.</p>
+        <p data-aos="zoom-in" data-aos-duration="5000" class="alinha"><img src="./img/is-contrucao-de-ambiente-digital.png" alt=""></p>
+        <h1 data-aos="zoom-in" data-aos-duration="5000">Posicionamento de marca</h1>
+        <p data-aos="zoom-in" data-aos-duration="5000">Ser encontrado é tão importante quanto encontrar o que está buscando. Escolher entre os muitos caminhos é uma tarefa difícil,  e por isso te ajudamos a entender e elaborar a imagem na web que seu público-alvo terá de você e com isso alcançar os resultados esperados.</p>
+        <p data-aos="zoom-in" data-aos-duration="5000" class="alinha"><img src="./img/is-posicionamento-de-marca.png" alt=""></p>
+        <h1 data-aos="zoom-in" data-aos-duration="5000">Inteligência estratégica</h1>
+        <p data-aos="zoom-in" data-aos-duration="5000">Observar as tendências e traçar uma estratégia é fundamental para um case de sucesso. A Sinapse te ajuda a analisar os cenários, estabelecer métricas e transformar esse conjunto de informações em um plano de ação efetivo e eficaz, atingindo os objetivos determinados.</p>
+        <p data-aos="zoom-in" data-aos-duration="5000" class="alinha"><img src="./img/is-inteligencia-estrategica.png" alt=""></p>
+        <a data-aos="zoom-in" data-aos-duration="5000" href="#">
+            <div class="botao">Solicite um orçamento</div>
         </a>
     </main>
     <footer>
@@ -62,5 +61,14 @@
         </p>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="js/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+         //   disable: function () {
+        //        var maxWidth = 800;
+       //         return window.innerWidth < maxWidth;
+       //     }
+        });
+    </script>
 </body>
 </html>

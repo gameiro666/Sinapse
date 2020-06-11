@@ -21,6 +21,7 @@ body {
 
     >header {
 
+
         &::before {
             content: '';
             position: fixed;
@@ -31,11 +32,14 @@ body {
         }
 
         >nav {
-            position: fixed;
             z-index: 2;
+            position: fixed;
 
-            > a{
-                >img{
+            >a {
+                z-index: 2;
+                position: relative;
+
+                >img {
                     transition: width 0.7s ease-in-out;
                 }
             }
@@ -46,7 +50,7 @@ body {
             >a {
 
                 >img {
-                    width: 70%;
+                    width: 50%;
                 }
             }
         }
@@ -77,9 +81,20 @@ body {
             display: flex;
             justify-content: center;
             padding-top: 4%;
+            z-index: 2;
+            position: relative;
 
-            >.cta {
+            >.botao {
                 width: 50%;
+                border-radius: 36px;
+                background-color: #564D9E;
+                color: #fff;
+                border: none;
+                font-size: 1.375rem;
+                font-weight: 600;
+                padding: 4%;
+                text-align: center;
+                cursor: pointer;
             }
         }
 
@@ -98,7 +113,8 @@ body {
                 >label {
                     color: #fff;
 
-                    >input, textarea {
+                    >input,
+                    textarea {
                         width: 60%;
                         border-radius: 10px;
                         height: 40px;
@@ -114,7 +130,7 @@ body {
                             outline: none;
                             padding-left: 2%;
                         }
-                    
+
                     }
 
                     >textarea {
@@ -129,7 +145,7 @@ body {
                 }
             }
 
-            
+
             input[type="submit"] {
                 background-color: #fff;
                 color: #564D9E;
@@ -141,10 +157,39 @@ body {
                 cursor: pointer;
                 font-size: 1.4rem;
                 margin: 0 auto;
-                
+
                 &:hover {
-                    animation:botao .9s both;
-                @keyframes botao{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}}
+                    animation: botao .9s both;
+
+                    @keyframes botao {
+                        0% {
+                            transform: scale3d(1, 1, 1)
+                        }
+
+                        30% {
+                            transform: scale3d(1.25, .75, 1)
+                        }
+
+                        40% {
+                            transform: scale3d(.75, 1.25, 1)
+                        }
+
+                        50% {
+                            transform: scale3d(1.15, .85, 1)
+                        }
+
+                        65% {
+                            transform: scale3d(.95, 1.05, 1)
+                        }
+
+                        75% {
+                            transform: scale3d(1.05, .95, 1)
+                        }
+
+                        100% {
+                            transform: scale3d(1, 1, 1)
+                        }
+                    }
                 }
 
 
@@ -159,6 +204,6 @@ body {
     }
 
     >.main-contato {
-        height:0;
+        height: 0;
     }
 }

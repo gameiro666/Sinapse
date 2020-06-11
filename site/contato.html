@@ -16,12 +16,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Font Awesome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <!--AOS-->
+    <link rel="stylesheet" href="js/aos-master/dist/aos.css"/>
 
     <title>Contato | Sinapse: Agência Digital</title>
 </head>
 <body>
-    <div class="container-bg">
-        <img src="./img/is-contato.png" alt="">
+    <div class="container-bg" data-aos="fade-left" data-aos-duration="1000">
+        <img src="./img/is-contato.png" alt="" data-aos="zoom-in" data-aos-duration="1000">
     </div>
     <header>
         <nav>
@@ -36,8 +38,8 @@
         </nav>
     </header>
     <main class="main-contato"> 
-        <h1>Pronto pra ligar os pontos?</h1>
-        <form id="formulario" method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php">
+        <h1 data-aos="zoom-in" data-aos-duration="5000">Pronto pra ligar os pontos?</h1>
+        <form data-aos="zoom-in" data-aos-duration="5000" id="formulario" method="post" action="http://hub.fatecrl.edu.br/sobrino/recebe.php">
             <p>
                 <label>
                     Nome<br> <input type="text" required placeholder="Digite seu nome" name="nome" id="nome" size="35"
@@ -73,5 +75,15 @@
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </p>
     </footer>
+    <script src="./js/main.js"></script>
+    <script src="js/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+         //   disable: function () {
+        //        var maxWidth = 800;
+       //         return window.innerWidth < maxWidth;
+       //     }
+        });
+    </script>
 </body>
 </html>

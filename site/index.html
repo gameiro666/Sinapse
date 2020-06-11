@@ -16,28 +16,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Font Awesome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    <!--AOS-->
+    <link rel="stylesheet" href="js/aos-master/dist/aos.css"/>
+    <script src="./js/particles/jquery.particleground.min.js"></script>
+
 
     <title>Sinapse: Agência Digital</title>
 </head>
 
 <body>
-    <div class="container-bg">
+    <div class="container-bg" data-aos="fade-left" data-aos-duration="1000">
+        <div class="pontos" id="particles"></div>
         <img src="./img/is-home.png" alt="">
     </div>
+
 
     <header>
         <nav>
             <a href="index.html"><img src="./img/logo.png" alt="Logo Sinapse"></a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./contato.html">Contato</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main data-aos="fade-right" data-aos-duration="1000">
         <h1>Conecte o seu negócio ao mundo digital</h1>
         <p>A Sinapse é uma agência digital especializada na construção de sites, aplicações web e posicionamento de
             marcas.</p>
@@ -54,6 +60,16 @@
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </p>
     </footer>
+    <script src="./js/main.js"></script>
+    <script src="js/aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+         //   disable: function () {
+        //        var maxWidth = 800;
+       //         return window.innerWidth < maxWidth;
+       //     }
+        });
+    </script>
 </body>
 
 </html>
