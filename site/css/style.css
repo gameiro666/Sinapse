@@ -18,7 +18,7 @@ body > .container-bg {
   background-size: 111%;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
+  position: fixed;
   z-index: -1;
 }
 
@@ -41,8 +41,6 @@ body > header > nav {
   display: -ms-flexbox;
   display: flex;
   padding-top: 3%;
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 body > header > nav > ul {
@@ -176,6 +174,7 @@ body > header > nav > ul > li:last-child {
 
 body > header > nav > ul > li > a {
   width: 100%;
+  color: #564D9E;
 }
 
 body > header > nav > a {
@@ -365,7 +364,7 @@ body > main > a > .cta {
 }
 
 body > footer {
-  position: absolute;
+  position: fixed;
   bottom: 2%;
   right: 2%;
 }

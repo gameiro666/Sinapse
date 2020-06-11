@@ -8,8 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #564D9E;
-    $width-central: 62.5;
-    $cor: #564D9E;
+    $width-central: 62.5%;
     font-size: 20px;
 
     >.container-bg {
@@ -19,7 +18,7 @@ body {
         background-size: 111%;
         background-position: center;
         background-repeat: no-repeat;
-        position: absolute;
+        position: fixed;
         z-index: -1;
 
         @media (max-width: 1200px) {
@@ -40,8 +39,7 @@ body {
         >nav {
             display: flex;
             padding-top: 3%;
-            position: sticky;
-
+            
             >ul {
                 width: 100%;
                 display: flex;
@@ -70,6 +68,7 @@ body {
 
                     >a {
                         width: 100%;
+                        color: #564D9E;
                     }
                 }
             }
@@ -136,7 +135,7 @@ body {
     }
 
     >footer {
-        position: absolute;
+        position: fixed;
         bottom: 2%;
         right: 2%;
 
