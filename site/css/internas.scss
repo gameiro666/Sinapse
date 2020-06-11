@@ -1,32 +1,91 @@
 body {
 
     >.container-bg {
-        background-image: url("../img/lateral-internas.svg"); 
+        background-image: url("../img/lateral-internas.svg");
         background-position-x: -46%;
+        z-index: 2;
 
 
-        >img {
+        >.img-servicos {
+            width: 45%;
+            right: 5%;
+            bottom: 20%;
+        }
+
+        >.img-sobre {
             width: 35%;
+            right: 16%;
+            bottom: 7%;
         }
     }
 
-    /*>header {
+    >header {
 
         &::before {
             content: '';
             position: fixed;
-            background-color: red;
+            background-color: #fff;
             width: 100%;
-            height: 30vh;
+            height: 250px;
             z-index: 1;
         }
-    }*/
+
+        >nav {
+            position: fixed;
+            z-index: 2;
+
+            > a{
+                >img{
+                    transition: width 0.7s ease-in-out;
+                }
+            }
+        }
+
+        >.alt-logo {
+
+            >a {
+
+                >img {
+                    width: 70%;
+                }
+            }
+        }
+    }
 
     >main {
+        padding-top: 250px;
+        padding-bottom: 200px;
         width: 45%;
 
         >p {
-            padding: 0
+            padding: 0;
+            line-height: 30px;
         }
+
+        >.alinha {
+            text-align: center;
+            padding: 4% 0;
+
+            >img {
+                max-width: 100%;
+            }
+        }
+
+        >a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 4%;
+
+            >.cta {
+                width: 50%;
+            }
+        }
+
+
+
+
+
+
     }
 }

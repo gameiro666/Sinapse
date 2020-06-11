@@ -110,35 +110,35 @@ body {
 
         >a {
             width: 100%;
-
-            >.cta {
-                width: 70%;
-                border-radius: 36px;
-                background-color: #564D9E;
-                color: #fff;
-                border: none;
-                font-size: 22px;
-                font-weight: 600;
-                padding: 4%;
-                text-align: center;
-                cursor: pointer;
-                animation: atencao .4s linear 3s 10 both;
-                @keyframes atencao{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
-                
-                @media (max-width: 1200px) {
-                    font-size: 16px;
-                    width: 50%;
-                }
-
-            }
         }
+    }
+
+    .cta {
+        width: 70%;
+        border-radius: 36px;
+        background-color: #564D9E;
+        color: #fff;
+        border: none;
+        font-size: 22px;
+        font-weight: 600;
+        padding: 4%;
+        text-align: center;
+        cursor: pointer;
+        animation: atencao .4s linear 3s 10 both;
+        @keyframes atencao{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
+        
+        @media (max-width: 1200px) {
+            font-size: 16px;
+            width: 50%;
+        }
+
     }
 
     >footer {
         position: fixed;
         bottom: 2%;
         right: 2%;
-
+        z-index: 2;
 
         >p, a {
             color: #fff;

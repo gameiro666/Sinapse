@@ -287,7 +287,7 @@ body > main > a {
   width: 100%;
 }
 
-body > main > a > .cta {
+body .cta {
   width: 70%;
   border-radius: 36px;
   background-color: #564D9E;
@@ -357,7 +357,7 @@ body > main > a > .cta {
 }
 
 @media (max-width: 1200px) {
-  body > main > a > .cta {
+  body .cta {
     font-size: 16px;
     width: 50%;
   }
@@ -367,6 +367,7 @@ body > footer {
   position: fixed;
   bottom: 2%;
   right: 2%;
+  z-index: 2;
 }
 
 body > footer > p, body > footer a {
