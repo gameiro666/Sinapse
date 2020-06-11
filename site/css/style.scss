@@ -9,7 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #564D9E;
     $width-central: 62.5%;
-    font-size: 20px;
+    font-size: 1.25rem;
 
     >.container-bg {
         width: 100vw;
@@ -94,17 +94,17 @@ body {
         padding-top: 4%;
         
         >h1 {
-            font-size: 44px;
+            font-size: 2.75rem;
         }
 
         >p {
-            font-size: 22px;
+            font-size: 1.375rem;
             padding-top: 4%;
             padding-bottom: 14%;
 
             @media (max-width: 1200px) {
                 width: 80%;
-                font-size: 18px;
+                font-size: 1.125rem;
             }
         }
 
@@ -119,7 +119,7 @@ body {
         background-color: #564D9E;
         color: #fff;
         border: none;
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 600;
         padding: 4%;
         text-align: center;
@@ -128,7 +128,7 @@ body {
         @keyframes atencao{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
         
         @media (max-width: 1200px) {
-            font-size: 16px;
+            font-size: 1rem;
             width: 50%;
         }
 
@@ -142,7 +142,7 @@ body {
 
         >p, a {
             color: #fff;
-            font-size: 24px;
+            font-size: 1.5rem;
         }
 
         >.slogan {
@@ -153,7 +153,7 @@ body {
         >.redes-sociais {
             >a{
                 padding-right: 4%;
-                font-size: 30px;
+                font-size: 1.875rem;
             }
         }
 
