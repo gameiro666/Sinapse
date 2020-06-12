@@ -136,6 +136,7 @@ body {
             }
 
             >.logo-branco {
+                display: none;
 
                 @media (max-width: 767px) {
                     display: block;

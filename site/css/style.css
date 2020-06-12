@@ -355,6 +355,10 @@ body > header > nav > a > img {
   width: 100%;
 }
 
+body > header > nav > .logo-branco {
+  display: none;
+}
+
 @media (max-width: 767px) {
   body > header > nav > .logo-branco {
     display: block;
