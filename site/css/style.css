@@ -20,6 +20,14 @@ body .pontos {
   opacity: .2;
 }
 
+@media (max-width: 767px) {
+  body .pontos {
+    width: 100%;
+    height: 100vh;
+    opacity: .1;
+  }
+}
+
 body > .container-bg {
   width: 100vw;
   height: 100vh;
@@ -35,6 +43,13 @@ body > .container-bg {
   body > .container-bg {
     background-size: 142%;
     background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  body > .container-bg {
+    background-color: #564D9E;
+    background-image: none;
   }
 }
 
@@ -74,11 +89,35 @@ body > .container-bg > img {
   }
 }
 
+@media (max-width: 1200px) {
+  body > .container-bg > img {
+    width: 50%;
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 767px) {
+  body > .container-bg > img {
+    display: none;
+  }
+}
+
 body > header > nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 3%;
+}
+
+@media (max-width: 767px) {
+  body > header > nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 body > header > nav > ul {
@@ -89,6 +128,12 @@ body > header > nav > ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+  body > header > nav > ul {
+    display: none;
+  }
 }
 
 body > header > nav > ul > li {
@@ -215,8 +260,20 @@ body > header > nav > ul > li > a {
   color: #564D9E;
 }
 
+@media (max-width: 767px) {
+  body > header > nav > ul > li > a {
+    color: #fff;
+  }
+}
+
 body > header > nav > a {
   width: 11%;
+}
+
+@media (max-width: 767px) {
+  body > header > nav > a {
+    display: none;
+  }
 }
 
 body > header > nav > a:hover {
@@ -298,14 +355,82 @@ body > header > nav > a > img {
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  body > header > nav > .logo-branco {
+    display: block;
+    width: 40%;
+  }
+}
+
+body > header > nav > .hamburguer {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body > header > nav > .hamburguer {
+    display: block;
+    position: absolute;
+    right: 2%;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+body > header > .nav-ativo {
+  background-color: #463e7c;
+}
+
+body > header > .nav-ativo > .logo-branco {
+  display: none;
+}
+
+body > header > .nav-ativo > ul {
+  display: block;
+  height: 100vh;
+  background-color: #463e7c;
+  padding-top: 60px;
+}
+
+body > header > .nav-ativo > ul > li {
+  width: 80%;
+  text-align: right;
+  padding: 20px 0;
+}
+
+body > header > .nav-ativo > ul > li > a {
+  padding: 10px;
+}
+
 body > main {
   width: 28%;
   padding-left: 2%;
   padding-top: 3%;
 }
 
+@media (max-width: 1500px) {
+  body > main {
+    padding-top: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 body > main > h1 {
   font-size: 2.75rem;
+}
+
+@media (max-width: 1200px) {
+  body > main > h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  body > main > h1 {
+    color: #fff;
+    text-align: center;
+  }
 }
 
 body > main > p {
@@ -314,15 +439,43 @@ body > main > p {
   padding-bottom: 14%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   body > main > p {
     width: 80%;
     font-size: 1.125rem;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  body > main > p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  body > main > p {
+    color: #fff;
+    width: 100%;
+    text-align: center;
   }
 }
 
 body > main > a {
   width: 100%;
+}
+
+body > main > .tag {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  body > main > .tag {
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
 }
 
 body .cta {
@@ -394,10 +547,37 @@ body .cta {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   body .cta {
     font-size: 1rem;
-    width: 50%;
+    width: 80%;
+    padding: 2%;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body .cta {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  body .cta {
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    width: 100%;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -428,14 +608,34 @@ body > footer {
   }
 }
 
+@media (max-width: 767px) {
+  body > footer {
+    position: unset;
+    padding: 20px 0;
+  }
+}
+
 body > footer > p, body > footer a {
   color: #fff;
   font-size: 1.5rem;
 }
 
+@media (max-width: 767px) {
+  body > footer > p, body > footer a {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
 body > footer > .slogan {
   font-weight: 300;
   padding-bottom: 4%;
+}
+
+@media (max-width: 767px) {
+  body > footer > .redes-sociais {
+    margin-bottom: 10px;
+  }
 }
 
 body > footer > .redes-sociais > a {
@@ -446,5 +646,21 @@ body > footer > .redes-sociais > a {
 body > footer > small {
   color: #fff;
   font-size: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  body > footer > small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.menu-block-scroll {
+  overflow: hidden;
+  background-color: #463e7c;
 }
 /*# sourceMappingURL=style.css.map */

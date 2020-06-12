@@ -33,3 +33,13 @@ $(document).ready(function() {
       onDestroy: function() {}
     });
     });
+
+    /*--------------------------------------------------------------Manipulação de classes---------------------------------------------------------------*/
+
+    $(document).ready(function(){
+        $('.hamburguer').click(function(){
+            $('nav').toggleClass('nav-ativo');
+            $('.fa-bars').toggleClass('fa-times');
+            $('body').toggleClass('menu-block-scroll');
+        })
+      });

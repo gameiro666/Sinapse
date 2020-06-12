@@ -1,12 +1,27 @@
 body {
 
+    .pontos {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+
     >.container-bg {
         background-image: url("../img/lateral-internas.svg");
         background-position-x: -46%;
         z-index: 2;
 
-        @media (max-width: 1300px) {
+        @media (max-width: 1400px) {
             background-size: 115%;
+        }
+
+        @media (max-width: 1200px) {
+            background-size: 153%;
+            background-position-x: 30%;
+        }
+
+        @media (max-width: 767px) {
+            display: none;
         }
 
 
@@ -31,7 +46,7 @@ body {
     }
 
     >header {
-
+        
 
         &::before {
             content: '';
@@ -40,11 +55,26 @@ body {
             width: 100%;
             height: 250px;
             z-index: 1;
+            
+            @media (max-width: 1500px) {
+                height: 160px;
+            }
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+            
         }
 
         >nav {
             z-index: 2;
             position: fixed;
+
+            @media (max-width: 767px) {
+                background-color: #564D9E;
+                width: 100%;
+                height: 40px;
+            }
 
             >a {
                 z-index: 2;
@@ -72,10 +102,33 @@ body {
         padding-bottom: 100px;
         width: 45%;
 
+        @media (max-width: 1500px) {
+            padding-top: 180px;
+        }
+
+        @media (max-width: 767px) {
+            width: 80%;
+            padding-top: 60px;
+        }
+
         >p {
             padding: 0;
             line-height: 30px;
             font-weight: 300;
+
+            @media (max-width: 767px) {
+                color: #564D9E;
+                text-align: left;
+            }
+        }
+
+        >h1 {
+            @media (max-width: 767px) {
+                color: #564D9E;
+                text-align: left;
+            }
+
+            
         }
 
         .alinha {
@@ -95,6 +148,10 @@ body {
             z-index: 2;
             position: relative;
 
+            @media (max-width: 767px) {
+                position: unset;
+            }
+
             >.botao {
                 width: 50%;
                 border-radius: 36px;
@@ -106,6 +163,11 @@ body {
                 padding: 4%;
                 text-align: center;
                 cursor: pointer;
+
+                @media (max-width: 767px) {
+                    width: 80%;
+                    margin-top: 48px;
+                }
             }
         }
 
@@ -118,19 +180,39 @@ body {
             z-index: 2;
             position: relative;
 
+            @media (max-width: 767px) {
+                position: unset;
+                width: 92%;
+                padding: 10px;
+                margin-bottom: 100px;
+            }
+
             >p {
                 margin-bottom: 18px;
+                @media (max-width: 767px) {
+                    text-align: center;
+                }
 
                 >label {
                     color: #fff;
 
+                    @media (max-width: 767px) {
+                        padding-bottom: 40px;
+                    }
+
                     >input,
                     textarea {
-                        width: 60%;
+                        width: 64%;
                         border-radius: 10px;
                         height: 40px;
                         border: none;
                         padding-left: 2%;
+
+                        @media (max-width: 767px) {
+                            width: 90%;
+                            padding-left: 0;
+                            margin-top: 10px ;
+                        }
 
                         &::placeholder {
                             font-size: 1rem;
@@ -148,6 +230,11 @@ body {
                         width: 100%;
                         height: 68px;
                         resize: none;
+
+                        @media (max-width: 767px) {
+                            width: 90%;
+                            height: 140px;
+                        }
 
                         &::placeholder {
                             padding-top: 10px;
@@ -216,6 +303,13 @@ body {
             z-index: 2;
             position: relative;
 
+            @media (max-width: 767px) {
+                position: unset;
+                width: 100%;
+                justify-content: center;
+                padding-bottom: 100px;
+            }
+
             >.fakelogo {
                 flex-basis: 20%;
                 height: 150px;
@@ -227,6 +321,10 @@ body {
                 animation: zoom .5s cubic-bezier(.25,.46,.45,.94) both;
                 @keyframes zoom{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
                 cursor: pointer;
+
+                @media (max-width: 767px) {
+                    flex-basis: 42%;
+                }
 
 
                 &:nth-child(odd) {
@@ -282,5 +380,12 @@ body {
 
     >.main-onepage {
         padding-bottom: 0;
+    }
+
+    >footer {
+        @media (max-width: 767px) {
+            background-color: #564D9E;
+        }
+
     }
 }
