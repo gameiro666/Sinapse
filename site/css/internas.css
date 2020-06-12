@@ -58,7 +58,7 @@ body > header > .alt-logo > a > img {
 
 body > main {
   padding-top: 250px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   width: 45%;
 }
 
@@ -114,7 +114,7 @@ body > main > form {
 }
 
 body > main > form > p {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 body > main > form > p > label {
@@ -162,7 +162,7 @@ body > main > form > p > label textarea:focus {
 
 body > main > form > p > label > textarea {
   width: 100%;
-  height: 120px;
+  height: 68px;
   resize: none;
 }
 
@@ -373,7 +373,7 @@ body > main > section > .fkl8 {
           animation-delay: .80s;
 }
 
-body > .main-contato {
-  height: 0;
+body > .main-onepage {
+  padding-bottom: 0;
 }
 /*# sourceMappingURL=internas.css.map */

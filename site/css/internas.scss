@@ -69,7 +69,7 @@ body {
 
     >main {
         padding-top: 250px;
-        padding-bottom: 200px;
+        padding-bottom: 100px;
         width: 45%;
 
         >p {
@@ -119,7 +119,7 @@ body {
             position: relative;
 
             >p {
-                margin-bottom: 20px;
+                margin-bottom: 18px;
 
                 >label {
                     color: #fff;
@@ -146,7 +146,7 @@ body {
 
                     >textarea {
                         width: 100%;
-                        height: 120px;
+                        height: 68px;
                         resize: none;
 
                         &::placeholder {
@@ -280,7 +280,7 @@ body {
         }
     }
 
-    >.main-contato {
-        height: 0;
+    >.main-onepage {
+        padding-bottom: 0;
     }
 }
