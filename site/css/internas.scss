@@ -5,6 +5,10 @@ body {
         background-position-x: -46%;
         z-index: 2;
 
+        @media (max-width: 1300px) {
+            background-size: 115%;
+        }
+
 
         >.img-servicos {
             width: 45%;
@@ -17,6 +21,13 @@ body {
             right: 16%;
             bottom: 7%;
         }
+
+        >.img-contato {
+            width: 33%;
+            right: 16%;
+            bottom: 15%;
+        }
+
     }
 
     >header {
@@ -196,11 +207,77 @@ body {
             }
         }
 
+        >section {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 2%;
+            z-index: 2;
+            position: relative;
+
+            >.fakelogo {
+                flex-basis: 20%;
+                height: 150px;
+                background-size: 80%;
+                background-position: center;
+                background-repeat: no-repeat;           
+                margin: 4px 8px;
+                margin-left: 0;
+                animation: zoom .5s cubic-bezier(.25,.46,.45,.94) both;
+                @keyframes zoom{0%{transform:scale(0);opacity:1}100%{transform:scale(1);opacity:1}}
+                cursor: pointer;
 
 
+                &:nth-child(odd) {
+                    background-color:rgba(86,77,158,.9);
+                }
 
+                &:nth-child(even) {
+                    background-color:rgba(86,77,158,.5);
+                }
+            }            
 
+            >.fkl1 {
+                background-image: url("/img/fakelogo1.png");
+                animation-delay: .10s;
+            }
 
+            >.fkl2 {
+                background-image: url("/img/fakelogo2.png");
+                animation-delay: .20s;
+            }
+
+            >.fkl3 {
+                background-image: url("/img/fakelogo3.png");
+                animation-delay: .30s;
+            }
+
+            >.fkl4 {
+                background-image: url("/img/fakelogo4.png");
+                animation-delay: .40s;
+            }
+
+            >.fkl5 {
+                background-image: url("/img/fakelogo5.png");
+                animation-delay: .50s;
+            }
+
+            >.fkl6 {
+                background-image: url("/img/fakelogo6.png");
+                animation-delay: .60s;
+            }
+
+            >.fkl7 {
+                background-image: url("/img/fakelogo7.png");
+                animation-delay: .70s;
+            }
+
+            >.fkl8 {
+                background-image: url("/img/fakelogo8.png");
+                animation-delay: .80s;
+            }
+        }
     }
 
     >.main-contato {

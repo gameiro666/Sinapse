@@ -4,6 +4,12 @@ body > .container-bg {
   z-index: 2;
 }
 
+@media (max-width: 1300px) {
+  body > .container-bg {
+    background-size: 115%;
+  }
+}
+
 body > .container-bg > .img-servicos {
   width: 45%;
   right: 5%;
@@ -14,6 +20,12 @@ body > .container-bg > .img-sobre {
   width: 35%;
   right: 16%;
   bottom: 7%;
+}
+
+body > .container-bg > .img-contato {
+  width: 33%;
+  right: 16%;
+  bottom: 15%;
 }
 
 body > header::before {
@@ -248,6 +260,117 @@ body > main > form input[type="submit"]:hover {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
   }
+}
+
+body > main > section {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 2%;
+  z-index: 2;
+  position: relative;
+}
+
+body > main > section > .fakelogo {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  height: 150px;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 4px 8px;
+  margin-left: 0;
+  -webkit-animation: zoom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: zoom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  cursor: pointer;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+body > main > section > .fakelogo:nth-child(odd) {
+  background-color: rgba(86, 77, 158, 0.9);
+}
+
+body > main > section > .fakelogo:nth-child(even) {
+  background-color: rgba(86, 77, 158, 0.5);
+}
+
+body > main > section > .fkl1 {
+  background-image: url("/img/fakelogo1.png");
+  -webkit-animation-delay: .10s;
+          animation-delay: .10s;
+}
+
+body > main > section > .fkl2 {
+  background-image: url("/img/fakelogo2.png");
+  -webkit-animation-delay: .20s;
+          animation-delay: .20s;
+}
+
+body > main > section > .fkl3 {
+  background-image: url("/img/fakelogo3.png");
+  -webkit-animation-delay: .30s;
+          animation-delay: .30s;
+}
+
+body > main > section > .fkl4 {
+  background-image: url("/img/fakelogo4.png");
+  -webkit-animation-delay: .40s;
+          animation-delay: .40s;
+}
+
+body > main > section > .fkl5 {
+  background-image: url("/img/fakelogo5.png");
+  -webkit-animation-delay: .50s;
+          animation-delay: .50s;
+}
+
+body > main > section > .fkl6 {
+  background-image: url("/img/fakelogo6.png");
+  -webkit-animation-delay: .60s;
+          animation-delay: .60s;
+}
+
+body > main > section > .fkl7 {
+  background-image: url("/img/fakelogo7.png");
+  -webkit-animation-delay: .70s;
+          animation-delay: .70s;
+}
+
+body > main > section > .fkl8 {
+  background-image: url("/img/fakelogo8.png");
+  -webkit-animation-delay: .80s;
+          animation-delay: .80s;
 }
 
 body > .main-contato {
