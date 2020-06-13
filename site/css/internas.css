@@ -175,6 +175,12 @@ body > main > a > .botao {
   cursor: pointer;
 }
 
+@media (max-width: 1500px) {
+  body > main > a > .botao {
+    margin-right: 10%;
+  }
+}
+
 @media (max-width: 767px) {
   body > main > a > .botao {
     width: 80%;
