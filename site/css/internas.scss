@@ -164,10 +164,6 @@ body {
                 text-align: center;
                 cursor: pointer;
 
-                @media (max-width: 1500px) {
-                    margin-right: 10%;
-                }
-
                 @media (max-width: 767px) {
                     width: 80%;
                     margin-top: 48px;
@@ -215,7 +211,7 @@ body {
                         @media (max-width: 767px) {
                             width: 90%;
                             padding-left: 0;
-                            margin-top: 10px;
+                            margin-top: 10px ;
                         }
 
                         &::placeholder {

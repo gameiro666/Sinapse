@@ -412,7 +412,7 @@ body > main {
   padding-top: 3%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body > main {
     padding-top: 0;
     width: 80%;
