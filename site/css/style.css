@@ -247,6 +247,13 @@ body > header > nav > ul > li:hover {
   }
 }
 
+@media (max-width: 767px) {
+  body > header > nav > ul > li:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 body > header > nav > ul > li:nth-child(n + 3) > a {
   color: #fff;
 }
@@ -374,7 +381,7 @@ body > header > nav > .hamburguer {
   body > header > nav > .hamburguer {
     display: block;
     position: absolute;
-    right: 2%;
+    right: 4%;
     font-size: 2rem;
     cursor: pointer;
     color: #fff;
